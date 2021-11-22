@@ -1,9 +1,11 @@
 # koa2-template
 
 ### 介绍
-[koa2-template](https://github.com/1260323835/koa2-template)是一个后端服务的解决方案，他基于[koa-generator](https://github.com/i5ting/koa-generator)实现，但是koa-gengrator搭建的项目只有最基本的服务，如果我们使用它的话，还需要添加自己的配置，每次新建项目都要重复劳动，所以我就想着把我自己在实际工作中所搭建的项目模版开源出来，供大家参考学习，希望能对大家有所帮助。
+
+[koa2-template](https://github.com/1260323835/koa2-template)是一个后端服务的解决方案，他基于[koa-generator](https://github.com/i5ting/koa-generator)实现，但是 koa-gengrator 搭建的项目只有最基本的服务，如果我们使用它的话，还需要添加自己的配置，每次新建项目都要重复劳动，所以我就想着把我自己在实际工作中所搭建的项目模版开源出来，供大家参考学习，希望能对大家有所帮助。
 
 ### 软件架构
+
 本项目已经为你生成了一个基本的后端开发框架，下面是整个项目的目录结构。
 
 ```bash
@@ -38,9 +40,9 @@
 
 #### 前序准备
 
-你需要在本地安装 [node](http://nodejs.org/) ，Koa 依赖 **node v7.6.0** 或 ES2015及更高版本和 async 方法支持。
+你需要在本地安装 [node](http://nodejs.org/) ，Koa 依赖 **node v7.6.0** 或 ES2015 及更高版本和 async 方法支持。
 
-#### 安装依赖 
+#### 安装依赖
 
 ```bash
 npm install
@@ -52,7 +54,7 @@ npm install
 npm run dev
 ```
 
-#### 构建生产环境 
+#### 构建生产环境
 
 ```bash
 npm run prd
@@ -69,7 +71,7 @@ npm run test
 1.  Fork 本仓库
 2.  新建 Feat_xxx 分支
 3.  提交代码
-4.  新建 Pull Request  
+4.  新建 Pull Request
 
 ### License
 

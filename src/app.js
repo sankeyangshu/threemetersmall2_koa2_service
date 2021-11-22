@@ -3,7 +3,7 @@
  * @Author: 王振
  * @Date: 2021-07-09 09:47:53
  * @LastEditors: 王振
- * @LastEditTime: 2021-07-09 10:52:51
+ * @LastEditTime: 2021-11-19 14:36:17
  */
 const Koa = require('koa');
 const app = new Koa();
@@ -16,6 +16,7 @@ const jwtKoa = require('koa-jwt');
 const cors = require('koa2-cors'); // 跨域
 
 // 获取密匙
+// eslint-disable-next-line camelcase
 const { SECRET, No_Verification } = require('./conf/constant');
 
 // error handler
@@ -29,9 +30,11 @@ app.use(
 );
 app.use(json());
 app.use(logger());
+// eslint-disable-next-line node/no-path-concat
 app.use(require('koa-static')(__dirname + '/public'));
 
 app.use(
+  // eslint-disable-next-line node/no-path-concat
   views(__dirname + '/views', {
     extension: 'ejs',
   })
