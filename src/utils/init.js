@@ -3,7 +3,7 @@
  * @Author: 王振
  * @Date: 2021-07-09 10:13:15
  * @LastEditors: 王振
- * @LastEditTime: 2021-07-09 10:13:29
+ * @LastEditTime: 2021-12-06 09:48:21
  */
 
 const requireDirectory = require('require-directory');
@@ -20,6 +20,7 @@ class InitManger {
     // 参数：第一个参数固定参数module，第二个参数要加载的模块的文件路径，第三个参数：每次加载一个参数执行的函数
     // 在node.js中process.cwd()方法可以获取项目的根路径
     const Url = `${process.cwd()}/src/routes`;
+    // eslint-disable-next-line no-unused-vars
     const modules = requireDirectory(module, Url, { visit: whenModuleLoad });
 
     function whenModuleLoad(obj) {
